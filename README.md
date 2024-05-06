@@ -26,3 +26,16 @@ In side employee class used @Setter, @Getter, @AllArgsConstructor, @NoArgsConstr
 @Entity annotation marks a class as a persistent Java entity. This means that instances of this class are mapped to corresponding records in a database table.
 @GeneratedValue(strategy = GenerationType.IDENTITY) indicates that the primary key values for entities will be automatically generated using an identity column in the databas and unique data.
 
+
+**************************************************************************************************************************************************************************************************
+Steps to write Junit test cases
+  //Junit test for
+    @DisplayName("unit test for")
+    @Test
+     public void give_when_then(){
+        //give - pre-condition or set up
+        //when - action or behaviour of the test case
+        //then - verify the output
+        
+     }
+
