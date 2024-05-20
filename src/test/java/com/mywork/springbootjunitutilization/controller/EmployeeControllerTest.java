@@ -3,7 +3,6 @@ package com.mywork.springbootjunitutilization.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mywork.springbootjunitutilization.model.Employee;
 import com.mywork.springbootjunitutilization.service.EmployeeService;
-import org.assertj.core.api.Assertions;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,7 +20,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 
 @WebMvcTest
 public class EmployeeControllerTest {
